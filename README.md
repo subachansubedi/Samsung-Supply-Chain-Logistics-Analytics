@@ -1,13 +1,19 @@
 <div align="center">
 
-<img src="Dashboard/Images/pngwing.com%20(38).png" alt="Samsung brand logo" width="58%">
+<img src="Images/brand.png" alt="Samsung brand logo" width="58%">
 
 ### From operational data to decisions across procurement, production, inventory, logistics, and sales
 
-<p>
-  <a href="Dashboard%20Pdf/dashboard.pdf"><img src="https://img.shields.io/badge/Explore%20Dashboard-PDF-1428A0?style=for-the-badge" alt="Explore dashboard PDF"></a>
-  <a href="Business%20Report/SAMSUNG%20Supply%20Chain%20and%20Logistics%20Analytics%20Report.pdf"><img src="https://img.shields.io/badge/Read%20Business%20Report-PDF-1F4E79?style=for-the-badge" alt="Read business report"></a>
-  <a href="Sql%20File/validation_queries.sql"><img src="https://img.shields.io/badge/Inspect%20SQL-Validation-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="Inspect validation SQL"></a>
+<p align="center">
+  <a href="Dashboard%20Pdf/dashboard.pdf">
+    <img src="https://img.shields.io/badge/◈%20DASHBOARD-00A9E0?style=for-the-badge&labelColor=071A2B" alt="Explore Dashboard PDF">
+  </a>
+  <a href="Business%20Report/SAMSUNG%20Supply%20Chain%20and%20Logistics%20Analytics%20Report.pdf">
+    <img src="https://img.shields.io/badge/◆%20BUSINESS%20REPORT-7C3AED?style=for-the-badge&labelColor=17102B" alt="Read Business Report">
+  </a>
+  <a href="Sql%20File/validation_queries.sql">
+    <img src="https://img.shields.io/badge/⚙%20VALIDATION%20SQL-FFB000?style=for-the-badge&labelColor=241A00" alt="Inspect Validation SQL">
+  </a>
 </p>
 
 <p><strong>Portfolio project by Subachan Subedi</strong><br>
@@ -75,7 +81,7 @@ The branded Home page provides navigation across the complete analytical experie
 **Home → Overview → Customer → Inventory → Supplier → Shipment**
 
 <p align="center">
-  <img src="Dashboard%20SS/Home.png" alt="Power BI dashboard home page" width="100%">
+  <img src="Dashboard%20SS/home.png" alt="Power BI dashboard home page" width="100%">
 </p>
 
 ### Executive overview
@@ -89,6 +95,10 @@ The Overview page brings together revenue, profit, inventory, supplier lead time
 ### Customer and sales performance
 
 The Customer page connects gross revenue, net revenue, profit, margin, discounting, product/category economics, customer contribution, and channel mix. It highlights the difference between a revenue-leading segment and a profit-leading segment.
+
+<p align="center">
+  <img src="Dashboard%20SS/customer.png" alt="Power BI customer and sales page" width="100%">
+</p>
 
 ### Inventory and production
 
@@ -114,19 +124,11 @@ The Shipment page analyzes shipping cost, total shipments, shipment quantity, de
   <img src="Dashboard%20SS/shipment.png" alt="Power BI shipment and logistics page" width="100%">
 </p>
 
-### Customer page
-
-<p align="center">
-  <img src="Dashboard%20SS/customer.png" alt="Power BI customer and sales page" width="100%">
-</p>
-
-The dashboard also includes a branded Home page for navigation across **Home, Overview, Customer, Inventory, Supplier, and Shipment**.
-
 ## 🔎 What the analysis found
 
 The findings below are the executive takeaways. 
 
-- **Inventory risk is concentrated:** 14 of 24 product–facility combinations were below reorder points, while ~$1.11M of inventory was above target levels.
+- **Inventory risk is concentrated:** 14 of 24 product–facility combinations were below reorder points, while $1.11M of inventory was above target levels.
 - **Discounts erode margin:** Realized margin falls from **31.29%** at 0% discount to **11.39%** at 11%+.
 - **Gumi capacity needs review:** Reported output materially exceeds stated annual capacity, requiring validation of the capacity definition and reporting period.
 - **Carrier cost vs. reliability:** Lower freight cost does not always mean better delivery performance; carrier allocation should balance both.
@@ -160,15 +162,6 @@ The repository contains **10 CSV tables** and **24,617 records** across five dim
 | Facts | `fact_production` | 4,500 | Output, defective units, and defect rate |
 | Facts | `fact_inventory` | 1,152 | Monthly stock snapshots by product and facility |
 | Facts | `fact_shipment` | 7,500 | Shipment volume, carrier, cost, status, and delays |
-
-### 🧮 Important measure definitions
-
-The full report documents several definitions that are important for responsible interpretation:
-
-- The dashboard profit margin is calculated using **net revenue**, not gross revenue.
-- The Supplier page’s **Avg Unit Cost** is a catalog/product-cost measure, not the quantity-weighted procurement price paid.
-- Inventory Quantity and Safety Stock cards aggregate monthly snapshots; they should not be interpreted as a live point-in-time balance without the appropriate snapshot filter.
-- Facility capacity is annual, while production covers two years; capacity comparisons therefore require annualization.
 
 ## 🔬 Validation and analysis workflow
 
@@ -245,7 +238,7 @@ This separates **control evidence** from **decision analysis**: one script check
 | [`Sql File/business_insight_queries.sql`](Sql%20File/business_insight_queries.sql) | Business opportunity analysis |
 | [`Business Report/SAMSUNG Supply Chain and Logistics Analytics Report.pdf`](Business%20Report/SAMSUNG%20Supply%20Chain%20and%20Logistics%20Analytics%20Report.pdf) | Full report with methodology, findings, and recommendations |
 
-> ⚠️ **Dataset disclaimer:** The dataset used in this portfolio project was sourced from [The Developer](https://thedeveloperyt.com/). It is a synthetic educational dataset and is **highly unrealistic** compared with Samsung’s actual operations. The metrics, findings, and recommendations should therefore be treated as a demonstration of analytics, dashboard design, and business reasoning—not as factual Samsung performance or real-world operational guidance.
+> ⚠️ **Dataset disclaimer:** The dataset used in this portfolio project was sourced from [The Developer](https://thedeveloperyt.com/). It is a synthetic educational dataset and is **highly unrealistic** compared with Samsung’s actual operations. The metrics, findings, and recommendations should therefore be treated as a demonstration of analytics, dashboard design, and business reasoning not as factual Samsung performance or real-world operational guidance.
 
 ## 🔗 Explore the project
 
